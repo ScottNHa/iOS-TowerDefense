@@ -16,6 +16,7 @@
 		D294D4E71D4B0C5900C74D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D294D4E51D4B0C5900C74D27 /* LaunchScreen.storyboard */; };
 		D294D4F21D4B0C5A00C74D27 /* TowerDefenseTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D4F11D4B0C5A00C74D27 /* TowerDefenseTestTests.swift */; };
 		D294D4FD1D4B0C5A00C74D27 /* TowerDefenseTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D4FC1D4B0C5A00C74D27 /* TowerDefenseTestUITests.swift */; };
+		D294D50B1D4B15A500C74D27 /* VisualComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D50A1D4B15A500C74D27 /* VisualComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D294D4F81D4B0C5A00C74D27 /* TowerDefenseTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TowerDefenseTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D294D4FC1D4B0C5A00C74D27 /* TowerDefenseTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerDefenseTestUITests.swift; sourceTree = "<group>"; };
 		D294D4FE1D4B0C5A00C74D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D294D50A1D4B15A500C74D27 /* VisualComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +107,10 @@
 				D294D4DA1D4B0C5900C74D27 /* GameScene.sks */,
 				D294D4DC1D4B0C5900C74D27 /* GameScene.swift */,
 				D294D4DE1D4B0C5900C74D27 /* GameViewController.swift */,
+				D294D50C1D4B15BE00C74D27 /* Components */,
 				D294D4E01D4B0C5900C74D27 /* Main.storyboard */,
-				D294D4E31D4B0C5900C74D27 /* Assets.xcassets */,
 				D294D4E51D4B0C5900C74D27 /* LaunchScreen.storyboard */,
+				D294D4E31D4B0C5900C74D27 /* Assets.xcassets */,
 				D294D4E81D4B0C5900C74D27 /* Info.plist */,
 			);
 			path = TowerDefenseTest;
@@ -129,6 +132,14 @@
 				D294D4FE1D4B0C5A00C74D27 /* Info.plist */,
 			);
 			path = TowerDefenseTestUITests;
+			sourceTree = "<group>";
+		};
+		D294D50C1D4B15BE00C74D27 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D294D50A1D4B15A500C74D27 /* VisualComponent.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				TargetAttributes = {
 					D294D4D41D4B0C5900C74D27 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = QXTJ8E7U5E;
 					};
 					D294D4EC1D4B0C5A00C74D27 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -266,6 +278,7 @@
 				D294D4DD1D4B0C5900C74D27 /* GameScene.swift in Sources */,
 				D294D4DF1D4B0C5900C74D27 /* GameViewController.swift in Sources */,
 				D294D4D91D4B0C5900C74D27 /* AppDelegate.swift in Sources */,
+				D294D50B1D4B15A500C74D27 /* VisualComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TowerDefenseTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HappyViet.TowerDefenseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -418,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TowerDefenseTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HappyViet.TowerDefenseTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -492,6 +511,7 @@
 				D294D5031D4B0C5A00C74D27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D294D5041D4B0C5A00C74D27 /* Build configuration list for PBXNativeTarget "TowerDefenseTestTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +520,7 @@
 				D294D5061D4B0C5A00C74D27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D294D5071D4B0C5A00C74D27 /* Build configuration list for PBXNativeTarget "TowerDefenseTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +529,7 @@
 				D294D5091D4B0C5A00C74D27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
